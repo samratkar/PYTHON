@@ -65,7 +65,26 @@ print (a[5::2])
 print (a[-5::-2])
 print (a[-5::2])
 
-a.resize(6,6)
-print (a)
+import numpy as np
+b = np.arange(30)
+b.resize(6,6)
+print (b)
+print (b[2:3])
+print (b[2:4])
+print (b[2:6])
+print (b[1::3])
+print (b[2,2:])
+print (b[0::2, 0::2])
+print (b[b>15])
+b[b>15]= 99
+print (b)
+#numpy array does not create a copy unless .copy() method is called. even if you assign the value to a new variable, the previous matrix gets changed.
 
+#CREATING A RANDOM MATRIX -
+import numpy as np
+test = np.random.randint(0,4,(4,3))
+print(test)
 
+#ENUMERATION
+for row_num, row_val in enumerate (test):
+    print ( 'row:', row_num, 'is', row_val)

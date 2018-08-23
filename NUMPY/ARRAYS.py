@@ -38,7 +38,7 @@ print (np.zeros((5,6)))
 print (np.eye(5))
 print (np.diag())
 
-#4. repeats
+#4. repeatst6g
 import numpy as np
 print (np.repeat([1,2,3],3))
 print(np.array([1,2,3]*3))
@@ -58,5 +58,14 @@ print(x.argmin())
 #SLICING AND INDEXING
 import numpy as np
 a = np.arange(30)
+print (a[5:])
+print (a[-5:])
+print (a[5:29])
+print (a[5::2])
+print (a[-5::-2])
+print (a[-5::2])
+
 a.resize(6,6)
 print (a)
+
+

@@ -26,11 +26,10 @@ print (CtyMpgByCyl)
 class_list = [d['class'] for d in file_list]
 class_set = list(set(class_list))
 CtyMpgByClass = []
-avg = 0
+avg = 0.0
 for car_class in class_set:
     mpg_list = [int(d['cty']) for d in file_list if (d['class'] == car_class)]
     avg = sum(mpg_list)/len(mpg_list)
     CtyMpgByClass.append((car_class, avg))
 CtyMpgByClass.sort()
 print (CtyMpgByClass)
-

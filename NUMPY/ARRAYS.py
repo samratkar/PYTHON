@@ -36,7 +36,7 @@ import numpy as np
 print (np.ones((5,6)))
 print (np.zeros((5,6)))
 print (np.eye(5))
-print (np.diag())
+#print (np.diag())
 
 #4. repeatst6g
 import numpy as np

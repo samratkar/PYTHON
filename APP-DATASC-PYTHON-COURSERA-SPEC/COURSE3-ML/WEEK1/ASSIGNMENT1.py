@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn.datasets import load_breast_cancer
 #The object returned by load_breast_cancer() is a scikit-learn Bunch object, which is similar to a dictionary.​
 cancer = load_breast_cancer()
-print(cancer.DESCR) # Print the data set description
+#print(cancer.DESCR) # Print the data set description
 cancer.keys()
 cancer['feature_names']
 
@@ -58,3 +58,24 @@ What is the class distribution? (i.e. how many instances of malignant (encoded 0
 
 This function should return a Series named target of length 2 with integer values and index = ['malignant', 'benign']
 '''
+freq_dist = df['target'].value_counts()
+#print (freq_dist)
+#print(freq_dist.values)
+#target = pd.Series([freq_dist[0],freq_dist[1]], index = ['malignant', 'benign'])
+target = pd.Series(freq_dist.values, index = ['malignant', 'benign'])
+print (target)
+#target = pd.Series (freq_dist, index = ['malignant', 'benign'])
+#print (target)
+
+
+'''
+Question 3
+Split the DataFrame into X (the data) and y (the labels).
+
+This function should return a tuple of length 2: (X, y), where
+
+X, a pandas DataFrame, has shape (569, 30)
+y, a pandas Series, has shape (569,).
+'''
+
+    

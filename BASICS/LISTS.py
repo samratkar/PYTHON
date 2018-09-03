@@ -85,3 +85,25 @@ for file_line in file_handle:
         file_words_list = file_line.split()
         print (file_words_list[1])
 print ("There were", counter, "lines in the file with From as the first word")
+
+'''
+SLICING
+'''
+a[start:end] # items start through end-1
+a[start:]    # items start through the rest of the array
+a[:end]      # items from the beginning through end-1
+a[:]         # a copy of the whole array
+a[start:end:step] # start through not past end, by step
+
+#The other feature is that start or end may be a negative number, which means it counts from the end of the array instead of the beginning. So:
+a[-1]    # last item in the array
+a[-2:]   # last two items in the array
+a[:-2]   # everything except the last two items
+
+
+#Similarly, step may be a negative number:
+a[::-1]    # all items in the array, reversed
+a[1::-1]   # the first two items, reversed
+a[:-3:-1]  # the last two items, reversed
+a[-3::-1]  # everything except the last two items, reversed
+

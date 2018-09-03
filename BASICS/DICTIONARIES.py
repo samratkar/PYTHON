@@ -76,3 +76,11 @@ for line in file_handle:
 #print(sorted(name_dict.items()))
 #sorting using value
 print (sorted([(v,k) for k,v in name_dict.items()], reverse=True))
+
+#zip
+merge_list = zip([1,2,4,5],['a','b','c','d','e'],['!','@','#','$','^'])
+for i in merge_list:
+    print (i)
+#the output of zip can be directly converted to a dictionary as follows. But then it would need to have only two zipped lists.  
+merge_dict = dict (zip([1,2,4,5],['a','b','c','d','e']))
+print (merge_dict)

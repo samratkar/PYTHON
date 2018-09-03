@@ -30,3 +30,8 @@ purchase_3 = pd.Series({'Name': 'Vinod',
 df = pd.DataFrame([purchase_1, purchase_2, purchase_3], index=['Store 1', 'Store 1', 'Store 2'])
 print (df)
 print(df['Item Purchased'])
+
+#SPLITTING
+#Using the list way of splitting you can split only the rows. To be able to split the columns, you will have to add the second argument as given below -
+df1 = df.iloc[:,:72] #all columns till 71st column
+df2 = df.iloc[:,72:] #columns 72 and beyond.

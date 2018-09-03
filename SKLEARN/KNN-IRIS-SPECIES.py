@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.datasets import load_iris
-import mglearn
+#import mglearn
 
 iris_dataset = load_iris()
 print("Keys of iris_dataset: \n{}".format(iris_dataset.keys()))
@@ -20,8 +20,7 @@ print("X_new.shape: {}".format(X_new.shape))
 
 prediction = knn.predict(X_new)
 print("Prediction: {}".format(prediction))
-print("Predicted target name: {}".format(
-iris_dataset['target_names'][prediction]))
+print("Predicted target name: {}".format(iris_dataset['target_names'][prediction]))
 
 y_pred = knn.predict(X_test)
 print("Test set predictions:\n {}".format(y_pred))

@@ -13,7 +13,10 @@ print (df)
 print (df.loc['Class1'])
 print (df.iloc[0])
 print (df)
-
+#printing a column. By default the indexing in data frames are wrt columns.
+df['Class1']
+#printing a row. integer values are used to to mention the row.
+df.iloc[0]
 #EXERCISE 1
 #For the purchase records from the pet store, how would you get a list of all items which had been purchased (regardless of where they might have been purchased, or by whom)?
 
@@ -28,10 +31,21 @@ purchase_3 = pd.Series({'Name': 'Vinod',
                         'Item Purchased': 'Bird Seed',
                         'Cost': 5.00})
 df = pd.DataFrame([purchase_1, purchase_2, purchase_3], index=['Store 1', 'Store 1', 'Store 2'])
-print (df)
+df
+df = pd.DataFrame([purchase_1, purchase_2, purchase_3])
+df
 print(df['Item Purchased'])
+print (df.iloc(1))
 
 #SPLITTING
 #Using the list way of splitting you can split only the rows. To be able to split the columns, you will have to add the second argument as given below -
 df1 = df.iloc[:,:72] #all columns till 71st column
 df2 = df.iloc[:,72:] #columns 72 and beyond.
+
+'''
+DATA FRAME INDEXING AND LOADING
+'''
+import os
+os.chdir ("/home/samrat/Documents/Git/PYTHON/PANDAS")
+df = pd.read_csv('DATA-FILES/olympics.csv')
+df.head()

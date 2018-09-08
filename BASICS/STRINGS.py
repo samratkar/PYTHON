@@ -96,11 +96,14 @@ print (sales_statement.format(sales_record['person'], sales_record['num_items'],
 
 #SLICING
 #You can go past the new line in a string.
+#note that the indexing is done wrt characters.
 name = 'samrat'
 print (name)
+name[:2]
 print (name[2:4])
 print (name[:3]) #sam
 print (name[4:]) #at
+
 
 # second parameter for slicing is the destination position  not including the same.
 data = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'

@@ -41,3 +41,19 @@ print (df.iloc(1))
 #Using the list way of splitting you can split only the rows. To be able to split the columns, you will have to add the second argument as given below -
 df1 = df.iloc[:,:72] #all columns till 71st column
 df2 = df.iloc[:,72:] #columns 72 and beyond.
+
+#NESTED DICTS :
+import pandas as pd
+pop = {'Nevada': {2001: 2.4, 2002: 2.9},'Ohio': {2000: 1.5, 2001: 1.7, 2002: 3.6}}
+frame3 = pd.DataFrame(pop)
+frame3
+pdata = {'Ohio': frame3['Ohio'][:-1],'Nevada': frame3['Nevada'][:2]}
+pd.DataFrame(pdata)
+Out[63]:
+Nevada Ohio
+2000
+NaN
+1.5
+2001
+2.4
+1.7

@@ -44,21 +44,3 @@ print('Accuracy of K-NN classifier on test set: {:.2f}'
 example_fruit = [[5.5, 2.2, 10, 0.70]]
 print('Predicted fruit type for ', example_fruit, ' is ',
       target_names_fruits[knn.predict(example_fruit)[0]-1])
-
-from sklearn.datasets import make_classification, make_blobs
-from matplotlib.colors import ListedColormap
-from sklearn.datasets import load_breast_cancer
-from adspy_shared_utilities import load_crime_dataset
-
-cmap_bold = ListedColormap(['#FFFF00', '#00FF00', '#0000FF','#000000'])
-
-
-# synthetic dataset for simple regression
-from sklearn.datasets import make_regression
-#plt.figure()
-plt.title('Sample regression problem with one input variable')
-X_R1, y_R1 = make_regression(n_samples = 100, n_features=1,
-                            n_informative=1, bias = 150.0,
-                            noise = 30, random_state=0)
-plt.scatter(X_R1, y_R1, marker= 'o', s=50)
-plt.show()

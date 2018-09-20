@@ -1,3 +1,4 @@
+from sklearn.linear_model import Lasso 
 from sklearn.linear_model import Ridge
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split

@@ -21,14 +21,10 @@ LINEAR REGRESSION
 
 linreg = LinearRegression().fit(X_train, y_train)
 
-print('linear model coeff (w): {}'
-     .format(linreg.coef_))
-print('linear model intercept (b): {:.3f}'
-     .format(linreg.intercept_))
-print('R-squared score (training): {:.3f}'
-     .format(linreg.score(X_train, y_train)))
-print('R-squared score (test): {:.3f}'
-     .format(linreg.score(X_test, y_test)))# -*- coding: utf-8 -*-
+print('linear model coeff (w): {}'.format(linreg.coef_))
+print('linear model intercept (b): {:.3f}'.format(linreg.intercept_))
+print('R-squared score (training): {:.3f}'.format(linreg.score(X_train, y_train)))
+print('R-squared score (test): {:.3f}'.format(linreg.score(X_test, y_test)))# -*- coding: utf-8 -*-
 
 '''
 LINEAR REGRESSION PLOT

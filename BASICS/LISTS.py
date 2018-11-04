@@ -12,6 +12,11 @@ print (my_list)
 #NESTING
 L = [1,2,3,4,5,6,7,8,9,10]
 M = [[1,2,3], [4,5,6], [7,8,9]]
+L1 = 1,2,3,4,5,6,7,8,9,10
+L2 = (1,2,3,4,5,6,7,8,9,10)
+print (L1)
+print (L)
+print (L2)
 print (M)
 print (M[0])
 print (M[2][2])
@@ -107,3 +112,7 @@ a[1::-1]   # the first two items, reversed
 a[:-3:-1]  # the last two items, reversed
 a[-3::-1]  # everything except the last two items, reversed
 
+my_list = ['1','2','3','4']
+print (my_list)
+my_list[:] = []
+print (my_list)

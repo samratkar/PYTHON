@@ -1,13 +1,15 @@
 INDEX -
-1. BROADCASTING
-2. Bytearray
-3. find
-4. replace
-5. SPLIT
-6. String formatting
-7. Indexing a string
-8. concatenating using + symbol. There is no method known as concat
-9. Slicing.
+> BROADCASTING
+> Bytearray
+> find
+> replace
+> SPLIT (splits a string based on a given character and creates separate strings)
+> STRIP (strips letters from right and left. lstrip and rstrip does from one direction only)
+> String formatting
+> Indexing a string
+> concatenating using + symbol. There is no method known as concat
+> Slicing.
+> join
 
 
 NOTE: BROADCASTING -
@@ -43,9 +45,10 @@ print (s.find('rat'))
 print (s.replace('rat','mouse'))
 #split() - THe list() method expands the string into a list of all the characters separately. But split method helps us to expand the strings with respect to the delimitersself.
 print(s.split('a'))
-whiteSpacedString = 'Geema and Daddy \n Studies\n \n     '
+whiteSpacedString = 'aaaaaGeema and Daddy \n Studies\n \naaaaaaa     '
 print(whiteSpacedString)
 print(whiteSpacedString.rstrip()) #just strips the new line character 'return' and white spaces from right
+print (whiteSpacedString.strip('a'))
 
 #Format methods for Strings
 # 'format characters' % (list of actual string data enclosed in quotes)
@@ -92,6 +95,9 @@ sales_record = {'price': 3.24,
                 'num_items': 4,
                 'person': 'Samrat'}
 sales_statement = '{} bought {} items at a price of {} each with a total expenditure of {}'
+print (sales_statement.format(sales_record['person'], sales_record['num_items'], sales_record['price'], sales_record['num_items']*sales_record['price']) )
+
+sales_statement = '{3} bought {1} items at a price of {2} each with a total expenditure of {0}'
 print (sales_statement.format(sales_record['person'], sales_record['num_items'], sales_record['price'], sales_record['num_items']*sales_record['price']) )
 
 #SLICING

@@ -35,3 +35,37 @@ while True:
 
 print("Maximum is", find_max(num_list))
 print("Minimum is", find_min(num_list))
+
+# NOTE: BUILT IN FUNCTIONS -
+
+#NOTE: VARIABLE ARGUMENTS  -
+def total(a=5, *numbers, **phonebook):
+    print('a', a)
+
+    #iterate through all the items in tuple
+    for single_item in numbers:
+        print('single_item', single_item)
+
+    #iterate through all the items in dictionary
+    for first_part, second_part in phonebook.items():
+        print(first_part,second_part)
+
+total(10,1,2,3,Jack=1123,John=2231,Inge=1560)
+
+# NOTE - Built-in Functions
+abs()	divmod()	input()	open()	staticmethod()
+all()	enumerate()	int()	ord()	str()
+any()	eval()	isinstance()	pow()	sum()
+basestring()	execfile()	issubclass()	print()	super()
+bin()	file()	iter()	property()	tuple()
+bool()	filter()	len()	range()	type()
+bytearray()	float()	list()	raw_input()	unichr()
+callable()	format()	locals()	reduce()	unicode()
+chr()	frozenset()	long()	reload()	vars()
+classmethod()	getattr()	map()	repr()	xrange()
+cmp()	globals()	max()	reversed()	zip()
+compile()	hasattr()	memoryview()	round()	__import__()
+complex()	hash()	min()	set()
+delattr()	help()	next()	setattr()
+dict()	hex()	object()	slice()
+dir()	id()	oct()	sorted()

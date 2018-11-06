@@ -116,3 +116,15 @@ my_list = ['1','2','3','4']
 print (my_list)
 my_list[:] = []
 print (my_list)
+
+#NOTE : multiplying by number to a list does not multiply the elements. Rather it just repeats
+my_list = ['1','2','3','4']
+my_list * 2
+
+my_list = [1,2,3,4]
+my_list * 2
+
+#NOTE : square the elements of a list. Since the above didnt work, we use numpy arrays as they work easily as matrices.
+my_list = [1,2,3,4,5,6]
+print (list(map(lambda x:x**2, my_list)))
+sum(my_list)

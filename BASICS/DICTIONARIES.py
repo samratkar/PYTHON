@@ -84,3 +84,19 @@ for i in merge_list:
 #the output of zip can be directly converted to a dictionary as follows. But then it would need to have only two zipped lists.  
 merge_dict = dict (zip([1,2,4,5],['a','b','c','d','e']))
 print (merge_dict)
+
+dict = {0:'Fish', 1:'Bird', 2:'Mammal'}
+#Printing dict elements directly results in printing of the values
+print (dict[0], dict[1], dict[2])
+#Printing dict elements as list prints the indices
+print (list(dict))
+#as expected the iterator in the for would contain the index and not the value
+for i in dict:
+    print (i)
+
+d = {0, 1, 2}
+for x in d:
+    print(d.add(x))
+
+
+    

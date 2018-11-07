@@ -128,3 +128,8 @@ my_list * 2
 my_list = [1,2,3,4,5,6]
 print (list(map(lambda x:x**2, my_list)))
 sum(my_list)
+
+#NOTE : ELEMENT WISE PRODUCT OF LIST
+list_1 = [3,6,7,5]
+list_2 = [4,5,1,7]
+print (list(map(lambda x,y: x*y, list_1, list_2)))

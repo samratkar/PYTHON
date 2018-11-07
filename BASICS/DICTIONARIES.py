@@ -1,4 +1,8 @@
 # Dictionary is like Map.
+'''
+1. BY DEFAULT ITERATION IN DICTS ARE DONE VIA KEYS. SO IF U PRINT THE DIC, IT WILL RETURN THE KEYS AND NOT THE VALUES.
+'''
+
 food  = {'wine': 123, 'beer':154, 'pizza':258, 'burger':354, 'fries':365, 'cola':150, 'apple':95, 'donut':195}
 print (food)
 print (list(food))

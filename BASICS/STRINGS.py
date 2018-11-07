@@ -110,6 +110,8 @@ print (name[2:4])
 print (name[:3]) #sam
 print (name[4:]) #at
 
+name = 'I love Python'
+print (name[2:6])
 
 # second parameter for slicing is the destination position  not including the same.
 data = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
@@ -123,3 +125,8 @@ text = "X-DSPAM-Confidence:    0.8475";
 num_pos = text.find('0')
 num_data = text[num_pos:]
 print (float(num_data))
+
+# difference between [2:] and [2]
+L = [[1, 2, 3], [4, 5, 6], [7, 8, 9, 10]]
+print (L[2: ])
+print (L[2])

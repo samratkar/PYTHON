@@ -6,3 +6,5 @@ factor(4,3)
 
 greater = lambda x,y : x if x>y else y
 print (greater (1,2))
+
+#LAMBDA CANNOT CONTAIN ASSIGNMENT OPERATION

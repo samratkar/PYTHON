@@ -26,3 +26,4 @@ count = 0
 my_list = list(map(lambda x: 1 if (x[0] == 'S') else 0, input_list))
 count = sum(my_list)
 print(count)
+

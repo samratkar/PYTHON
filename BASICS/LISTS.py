@@ -94,7 +94,7 @@ print ("There were", counter, "lines in the file with From as the first word")
 '''
 SLICING
 '''
-a[start:end] # items start through end-1
+a[start:end:STEP] # items start through end-1
 a[start:]    # items start through the rest of the array
 a[:end]      # items from the beginning through end-1
 a[:]         # a copy of the whole array
@@ -107,12 +107,14 @@ a[:-2]   # everything except the last two items
 
 
 #Similarly, step may be a negative number:
+#NOTE THAT THESE ARE FOR ONLY ONE DIMENSION.
 a[::-1]    # all items in the array, reversed
 a[1::-1]   # the first two items, reversed
 a[:-3:-1]  # the last two items, reversed
 a[-3::-1]  # everything except the last two items, reversed
 
 my_list = ['1','2','3','4']
+print (my_list[:3])
 print (my_list)
 my_list[:] = []
 print (my_list)

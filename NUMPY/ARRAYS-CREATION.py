@@ -15,7 +15,7 @@ np.arange(): Create an array with increments of a fixed step size
 np.linspace(): Create an array of fixed length
 
 '''
-#1. ARRAY CREATION
+#NOTE : 1. ARRAY CREATION
 import numpy as np
 mylist=[1,2,3,4]
 print (mylist)
@@ -66,10 +66,14 @@ print(m)
 #2. SHAPE AND SIZING
 print(m.shape)
 #printing a series - airthmetic progress
+#The out put of range and arange are same. Only that arange returns a numpy array. Here i dont know number of elements.
+#in arange i know the interval. inlinspace, i dont know the interval. I just mention how many elements i need between two limits.
 import numpy as np
-a = np.arange (0,30,2)
+a = np.arange(0,30,2)
+a1 = list(range(0,30,2))
 print (a)
-b = np.linspace(0,4,20)
+print (a1)
+b = np.linspace (0,4,20)
 print (b)
 c = a.reshape(3,5)
 print (c)

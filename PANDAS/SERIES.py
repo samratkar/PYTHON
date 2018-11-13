@@ -1,7 +1,7 @@
 '''
 NOTES -
 1. If dictionary is passed into the series as input, then the mapping between the values and the indices are maintained. This can be seen in the example in line# 26. This tight linkage between the index and the values are not maintained if the input to the series is a list as shown in the example above it. So, for the new index a new  entry is added, and the existing mapptings are not even distrubed. The entry for which indices does not occur in the new index list are omitted outright. This is a way to filter out data!!
-But if the input is just a list, then the mappings are disturbed and indices are updated in order of the entry of the new indices. 
+But if the input is just a list, then the mappings are disturbed and indices are updated in order of the entry of the new indices.
 
 2. Since pandas are built on the top of the numpy array, all the broadcasting of operations (vectorization) is enabled by default with pandas. So, lambda functions and mapping them to the data strcutures are no more required.
 
@@ -91,4 +91,8 @@ df.sort_index(ascending = False )
 df.sort_values(by='Sales')
 df.sort_values(by=['Sales','Product_id'])
 
-
+# NOTE : auto re-alignment of the different indices in arithmetic operations
+'''
+A critical Series feature for many applications is that it automatically aligns differently-
+indexed data in arithmetic operations:
+'''

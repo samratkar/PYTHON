@@ -1,8 +1,8 @@
 '''
-1. A dataframe is a table that contains a list of objects of same type!  
+1. A dataframe is a table that contains a list of objects of same type!
 2. Every row corresponds to one object which has a numberical index. So the entire table is an agregation of multiple objects of the same type.
-3. Every column is one attribute to the object. 
-4. All the data type of each column has to be same. Type is associated with each column. 
+3. Every column is one attribute to the object.
+4. All the data type of each column has to be same. Type is associated with each column.
 5. While creating you enter a dictionary of elements to DataFrame. Note that for series, numpy arrays it was enough to supply a list or a tuple of elements.
 '''
 
@@ -65,3 +65,13 @@ NaN
 2001
 2.4
 1.7
+
+# NOTE - EVEN NUMBERED ROWS OF A DataFrame
+import pandas as pd
+df = pd.read_csv('https://query.data.world/s/vBDCsoHCytUSLKkLvq851k2b8JOCkF')
+index1 = [i for i in df.index if (i % 2 == 0)]#Type your code here for indexing the dataframe
+df_2 = df.iloc[index1[1:]]
+print(df_2.head(20))
+
+# NOTE - better solution of the above problem  -
+df_2 = df[2: :2]

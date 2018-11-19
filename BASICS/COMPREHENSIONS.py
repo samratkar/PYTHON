@@ -18,3 +18,9 @@ print(single_word_list)
 #NOTE - DICTIONARY COMPREHENSION
 squared_dict = {n:n*n for n in range (25)}
 print(squared_dict)
+
+#NOTE - DECISION IN COMPREHENSION
+l = [22, 13, 45, 50, 98, 69, 43, 44, 1]
+[x+1 if x >= 45 else x+5 for x in l ]
+#NOTE another way - 
+num_list = [value for value in y if value]

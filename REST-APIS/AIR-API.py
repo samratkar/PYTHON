@@ -1,0 +1,16 @@
+import numpy as np
+import pandas as pdb
+import requests, json
+import pprint
+
+api_key = "eyAidHlwIjogIkpXVCIsICJraWQiOiAiQzVwYW5zMWplWGJJZFpFN3RIUEc0V3VaYk1BPSIsICJhbGciOiAiUlMyNTYiIH0.eyAiYXRfaGFzaCI6ICI0a0Zqa29JT2wwdEUtMUZwSUl6QzNnIiwgInN1YiI6ICJzYW1yYXQua2FyQGhvbmV5d2VsbC5jb20iLCAiYXVkaXRUcmFja2luZ0lkIjogIjJhNDc1NGU3LWFlNGEtNGI3OS04MzhjLTBhMGUxZDE2ZmNjOS0yMzY5OTUiLCAidG9rZW5pc3N1ZWRmb3IiOiAidXNlciIsICJpc3MiOiAiaHR0cHM6Ly9pbXNxYS5zZW50aWVuY2UuaG9uZXl3ZWxsLmNvbTo0NDMvb3BlbmFtL29hdXRoMi9jYnBnYXRxYSIsICJ0b2tlbk5hbWUiOiAiaWRfdG9rZW4iLCAib2JqZWN0aWRlbnRpZmllciI6ICJmMjkwOTJlYy0zYzc2LTQzZGQtOWI5Yi01Yjk3Y2MwOTM1Y2IiLCAiZ2l2ZW5fbmFtZSI6ICJTQU1SQVQiLCAibm9uY2UiOiAidGVzdDEyMzIiLCAiYXVkIjogIjdiM2UxYjA1LTE1OTItNGJlMi05ODFjLWNjMzllMWIxODBmMSIsICJvcmcuZm9yZ2Vyb2NrLm9wZW5pZGNvbm5lY3Qub3BzIjogIjFhYjMzMjc5LTFiZjktNGExZS1iY2YzLWQxNzhmMDdhYzM3OCIsICJhenAiOiAiN2IzZTFiMDUtMTU5Mi00YmUyLTk4MWMtY2MzOWUxYjE4MGYxIiwgImF1dGhfdGltZSI6IDE1NDI3MDM2MjIsICJuYW1lIjogInNhbXJhdC5rYXJAaG9uZXl3ZWxsLmNvbSIsICJyZWFsbSI6ICIvY2JwZ2F0cWEiLCAiZXhwIjogMTU0MjcwNzI5NCwgInRva2VuVHlwZSI6ICJKV1RUb2tlbiIsICJpYXQiOiAxNTQyNzAzNjk0LCAiZmFtaWx5X25hbWUiOiAiS0FSIiB9.AFkmxia-tAOTk-yrAeVvH6PoB-RckPQaQDOX_GmZjtSCb6DDYfw21HYc6lznc8VgyQcDVL-snJhgkgxWA_xPZgG3E7qTtBhsQi3pcqE-meF3wV9aAzQPTvgfJlM9I27BRBvIuM7a4wvxzhZCiZ-f4HNX_lBkrgO-1xR4wmoPS0KLm4Tttd0AXntqKLG0SRr8FKcClZUBdPZ91ePQSNrC7TtCYLaYC495v8rVAUblhZiyyqW3w1CZtcElWnR_kj5-_yqqPWVC4UWiG8Rae5c8OxbJy3UMnsqPT2Z8VOxhqUAm0mx4t9LtDd3EEmLOnPc3Nrjzs2BO3byCe4oOloTfzg"
+
+fplan = '{ \"APIVERSION\": \"0.2.0\", \"REQUEST\": { \"CLIENT_ID\": 1, \"HEARTBEAT_CTR\": 1, \"TRANSACTION_ID\": 1, \"REQUEST_TYPE\": \"FPLN\", \"DATA_SET\": \["FLIGHT_PLAN"], \"FILTER_CRITERIA\": \"4D_TRAJECTORY\", \"DATA_ACCESS_DEFINITION\": { \"DATA_ACCESS_TYPE\": [ \"APERIODIC\" ] } }, \"AIRCRAFT_PROFILE\": { \"TAIL_NUMBER\": \"F5XSMS\", \"AIRFRAME_TYPE\": \"F5XSMS\", \"ENGINE_TYPE\": \"BR725A1-12\" }, \"FLIGHT_PLAN\": { \"PERFORMANCE_INITIALIZATION_DATA\": { \"BASIC_OPERATING_WEIGHT\": { \"VALUE\": 41200, \"UNITS\": \"LBS\" }, \"PAYLOAD\": { \"VALUE\": 200, \"UNITS\": \"LBS\" }, \"FUEL_WEIGHT\": { \"VALUE\": 15000, \"UNITS\": \"LBS\" }, \"TAKEOFF_CG\": 35 }, \"DEPARTURE_DETAIL\": { \"DEPARTURE_DATE\": \"DEPARTURE_DATE_TEMP\", \"DEPARTURE_TIME\": \"T09:08:00Z\" }, \"FLIGHT_PLAN_SEGMENT_LIST\": [ { \"ROUTE_DEFINITION\": { \"ROUTE_STRING\": \"KPHX KDVT\" }, \"ALTITUDE_PLANNING\": { \"CRUISE_ALTITUDE\": { \"VALUE\": 250, \"UNITS\": \"FLTLVL\", \"ALT_TYPE\": \"FL\" } }, \"SPEED_PLANNING_LIST\": [ { \"FLIGHT_PHASE\": \"CLB\", \"MODE\": \"defined\", \"CAS\": { \"VALUE\": 270, \"UNITS\": \"KNOTS\" }, \"MACH\": { \"VALUE\": 0.8, \"UNITS\": \"MACH\" } }, { \"FLIGHT_PHASE\": \"CRZ\", \"MODE\": \"defined\", \"CAS\": { \"VALUE\": 300, \"UNITS\": \"KNOTS\" }, \"MACH\": { \"VALUE\": 0.82, \"UNITS\": \"MACH\" } }, { \"FLIGHT_PHASE\": \"DES\", \"MODE\": \"defined\", \"CAS\": { \"VALUE\": 290, \"UNITS\": \"KNOTS\" }, \"MACH\": { \"VALUE\": 0.78, \"UNITS\": \"MACH\" } } ] } ] }}'
+url = "https://fmsair.honeywell.com/api/DF5X/v1/flight/trajectory={0}&key={1}".format(fplan,api_key)
+response = requests.get(url)
+print(type(response.text))
+#print(response.text)
+response_dict = json.loads(response.text)
+print (response_dict)
+pprint.pprint(response_dict)
+

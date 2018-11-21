@@ -55,4 +55,5 @@ CONDITION BASED INDEXING
 import pandas as pd
 df = pd.read_csv('https://query.data.world/s/vBDCsoHCytUSLKkLvq851k2b8JOCkF')
 df.head()
+#iloc is optional to just using the square braces. Since iloc access only row indices, this purges all the rows that finds a corresponding false.
 df[df['area'] > 0]

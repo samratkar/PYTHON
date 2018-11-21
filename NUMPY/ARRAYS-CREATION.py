@@ -29,6 +29,7 @@ print (y)
 np.ones([3,13])
 # 4 dimensional array.
 np.ones((3,3,3,4), dtype = np.int)
+
 #random number between 0 to 1. Is useful for probabilities.
 np.random.random((4,5))
 #gives one dimensional array only.

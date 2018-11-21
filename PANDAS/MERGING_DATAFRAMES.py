@@ -10,6 +10,7 @@ print (customer_df.head())
 df_1 = pd.merge(market_df, customer_df, how = 'inner', on = 'Cust_id')
 df_1.head()
 #NOTE - Dataframe is a collection of series, where each series is one column. So, while creating the dataframe by hand just keep that in mind to create serieses such that they correspond to each column.
+import pandas as pd
 df1 = pd.DataFrame({'Name'  : ['Ram', 'Shyam', 'Jadhu', 'Madhu'],
                     'Age'   : [20,21,22,23],
                     'Gener' : ['M', 'M', 'M', 'F']})
@@ -67,7 +68,7 @@ bronze.set_index('Country', inplace = True)
 
 # Add the three dataframes and set the fill_value argument to zero to avoid getting
 # NaN values
-# The trick is that the add() method is not adding the country name as they are made into index. This is a smart way to avoid a column gettin summed up. Just make it an index. Otherwise, due to the add() method the names would have got repeated for each row. 
+# The trick is that the add() method is not adding the country name as they are made into index. This is a smart way to avoid a column gettin summed up. Just make it an index. Otherwise, due to the add() method the names would have got repeated for each row.
 total = gold.add(silver, fill_value = 0).add(bronze, fill_value = 0)
 
 # Sort the resultant dataframe in a descending order

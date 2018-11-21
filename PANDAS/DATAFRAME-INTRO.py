@@ -13,7 +13,7 @@ data = {'state': ['Ohio', 'Ohio', 'Ohio', 'Nevada', 'Nevada'],
       'pop'  : [1.5, 1.7, 3.6, 2.4, 2.9]}
 df = pd.DataFrame(data)
 df
-# NOTE: - conditional indexing!
+# NOTE: - conditional indexing! the rows are purged as directly accessing square braces or iloc bothe accesses the rows. 
 df[[False, False, True, True, True]]
 df[pd.Series([False, False, True, True, True])]
 s1 = df['pop'] >2

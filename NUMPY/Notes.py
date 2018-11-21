@@ -21,6 +21,7 @@ a = np.random.randn(5);
 a = np.random.randn(5,1);
 print (a);
 print (a.shape);
+#dont use matrix 
 b = np.matrix([[1, 2, 3], [4, 5, 6]]);
 print (b);
 print ("b[0]=", b[0]);

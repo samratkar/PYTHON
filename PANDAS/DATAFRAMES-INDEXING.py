@@ -13,7 +13,8 @@ purchase_3 = pd.Series({'Name': 'Vinod',
                         'Cost': 5.00})
 df = pd.DataFrame([purchase_1, purchase_2, purchase_3], index=['Store 1', 'Store 2', 'Store 3'])
 #NOTE: ACCESSING USING THE ROW NAME GIVES YOU ALWAYS A DATA FRAME
-df
+df.append ({'City': [])
+
 df['Store 1' : 'Store 3']
 df['Store 1':]
 ss = df.loc['Store 1']

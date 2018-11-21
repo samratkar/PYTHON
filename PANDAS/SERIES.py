@@ -5,6 +5,8 @@ But if the input is just a list, then the mappings are disturbed and indices are
 
 2. Since pandas are built on the top of the numpy array, all the broadcasting of operations (vectorization) is enabled by default with pandas. So, lambda functions and mapping them to the data strcutures are no more required.
 
+3. index is always row-wise. This is both for series and data frames. So, iloc() refers to row and loc() refers to columns. 
+
 '''
 
 import pandas as pd

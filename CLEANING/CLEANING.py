@@ -9,11 +9,18 @@ df.shape
     #This helps you to figure out the extent of null values in the dataframe.
 df.info()
     #makes those values as TRUE that are missing.
-df.isnull()
+test = df.isnull()
+type(test)
     #column wise sum of nulls
 df.isnull().sum() > 5
     #columnwise sum
-df.isnull().sum()
+test = df.isnull().sum()
+type(test)
+
+test = df.isnull().sum() > 5
+type(test)
+
+
     #if a column as any true, it is marked as true.
 df.isnull().any()
 df.isnull().any(axis = 1)
@@ -34,7 +41,7 @@ df = df.drop('BuildingArea', axis = 1)
 import pandas as pd
 df = pd.read_csv('https://query.data.world/s/Hfu_PsEuD1Z_yJHmGaxWTxvkz7W_b0')
 df = df[df.isnull().sum(axis=1) <= 5]
-
+print (df.head())
 print(round(100*(df.isnull().sum()/len(df.index)), 2))#Round off to 2 decimal places.
 
 ##NOTE - Mean Imputation

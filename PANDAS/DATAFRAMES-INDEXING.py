@@ -1,5 +1,7 @@
 '''
 1. As Prof Raghavan said, each row of a data frame is an object of the same type. The type of each of the objects is determined by the type of the columns. The schema of the columns is determined by the constituent series'.
+
+2. A DataFrame by definition is a collection of series. Each column is a series. So if you have a data frame with several columns, and one column is say 'Sales', to be able to access the first 100 rows of this data frame from this column you need to mention df['Sales'][:100]. Note that the first square bracket just picks the series, and then it is a one dimensional array that you are just slicing following the standard notation of a single dimensional list. 
 '''
 import pandas as pd
 purchase_1 = pd.Series({'Name': 'Chris',

@@ -1,7 +1,8 @@
 store1 = [10.00, 11.00, 12.00, 2.34]
+min(store1)
 store2 = [1.11, 9.22, 10.99, 13]
 min_val = map(min, store1, store2)
-print (min_val)
+print (list(min_val))
 
 
 # SPLITTING NAMES USING MAP
@@ -26,4 +27,3 @@ count = 0
 my_list = list(map(lambda x: 1 if (x[0] == 'S') else 0, input_list))
 count = sum(my_list)
 print(count)
-

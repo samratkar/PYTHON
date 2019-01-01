@@ -45,3 +45,52 @@ dot_prod_1_4 = np.dot(e1,e4)
 dot_prod_3_4 = np.dot(e3,e4)
 ang_1_4 = np.arccos(dot_prod_1_4/(np.sqrt(5)*np.sqrt(3)))*(180/np.pi)
 ang_3_4 = np.arccos(dot_prod_3_4/(np.sqrt(2)*np.sqrt(3)))*(180/np.pi)
+
+import numpy as np
+
+A = np.array([[1, 2],
+             [2, 0]])
+B = np.array([[0, 1],
+             [-1, 2]])
+
+# matrix addition
+print(A+B)
+
+# matrix product
+print(np.dot(A, B))
+
+
+import numpy as np
+A = np.array([[1, 3],
+             [2, 0]])
+# transpose
+print(A.T)
+
+#NOTE - LINEAR TRANSFORMATION -
+1. COUNTER CLOCKWISE 90 DEGREE
+2. SHEAR
+3. CLOCKWISE 90 DEGREE
+
+ninety_degree_counter_clockwise = np.array([[0, -1],
+                                            [1, 0]])
+ninety_degree_clockwise = np.array([[0, 1],
+                                    [-1, 0]])
+shear = np.array([[1,1],
+                  [0,1]])
+temp = np.dot(shear,ninety_degree_counter_clockwise)
+transformed = np.dot(ninety_degree_clockwise,temp)
+print (transformed)
+
+# NOTE: system of three equations
+import numpy as np
+A = np.array([[2, 6, -1],
+              [1, 2, -2],
+              [-5,0,  2]])
+b = np.array([0, 1, 8])
+
+# compute the inverse
+A_inv = np.linalg.inv(A)
+
+# solution: A_inv * b
+x = np.dot(A_inv, b)
+print(x) # returns [ 0.  0. -1.]

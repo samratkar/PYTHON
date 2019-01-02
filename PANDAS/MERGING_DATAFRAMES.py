@@ -1,13 +1,20 @@
 import pandas as pd
 import sys as sys
 market_df = pd.read_csv("DATA-FILES/global_sales_data/market_fact.csv")
+market_df.head()
 customer_df = pd.read_csv("DATA-FILES/global_sales_data/cust_dimen.csv")
+customer_df.head()
 product_df = pd.read_csv("DATA-FILES/global_sales_data/prod_dimen.csv")
 shipping_df = pd.read_csv("DATA-FILES/global_sales_data/shipping_dimen.csv")
 orders_df = pd.read_csv("DATA-FILES/global_sales_data/orders_dimen.csv")
 print (market_df.head())
 print (customer_df.head())
+customer_df.info()
+market_df.info()
+market_df.head()
 df_1 = pd.merge(market_df, customer_df, how = 'inner', on = 'Cust_id')
+#gives error because join by default uses the index of the right table. Here Cust_id is string but the index is integer.
+market_df.join(customer_df, on = "Cust_id")
 df_1.head()
 #NOTE - Dataframe is a collection of series, where each series is one column. So, while creating the dataframe by hand just keep that in mind to create serieses such that they correspond to each column.
 import pandas as pd
@@ -85,3 +92,9 @@ group = df_merged.groupby('Country', sort = True)
 grouped = group.agg(np.sum)
 grouped.sort_values('Medals', ascending = False, inplace = True)
 print(grouped)
+
+##NOTE - Types of joins
+inner = intersection of indices
+outer = union of indices
+left = all rows of the left will be part of the final merged table
+right = all from right table

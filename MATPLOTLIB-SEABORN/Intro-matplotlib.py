@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 #lower limit 5, upper limit 99, number of points 100.
-x = np.linspace(5,100,100)
+x = np.linspace(5,100,15)
 y = np.linspace(10,1000,100)
 plt.xlabel("Current")
 plt.ylabel("Voltage")

@@ -27,6 +27,8 @@ df = pd.read_csv('https://query.data.world/s/vBDCsoHCytUSLKkLvq851k2b8JOCkF')
 df_1 = df.groupby(['month','day'])[['rain', 'wind']].mean()#Type your code to find the mean of columns 'rain' and 'wind'
 print(df_1.head(20))
 
+#Group by creates a new series with index = values of the columns based on which group by is being done
+
 '''
 Dataframe Pivot Table
 Description

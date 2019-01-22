@@ -1,0 +1,67 @@
+2018-05-27 16:45 I did this important work of redirecting my default journalling into the monthwise journals.
+This will help accomplish the following -
+1. Better index my detailed journalling.
+2. Enabling me to see the patterns per month and update the overview journal manunally
+3. I also chanded entry points to certain onther editable files in the dopbox using jrnl command line. There is this behavior of the jrnl command of overwritting anything that was earlier written in it. This way I had earlier lost several data of mine, and then  had decided to  use jrnl only for appending data. And ensure that jrnl commands are not used for files which are edited outside of jrnl fwk.
+
+Today the whole day is being dedicated towards journaling. In the morning a bout 3 hours I spent in arranging my chronology and overview of life text. And then I decided to use thejrnl entry point only for monthly details in separate sheets. I did that just now. Before this I was busy adding expenses in the Expense app in iPhone. Greatly accomplished day as of now!
+#EXPENSE APP IN PYTHON
+#JRNL CLEANUP
+
+2018-05-27 16:52 Also very important step today that was done to resolve all other confusions of the jrnling.
+It was arrived at that Day One will be used for notes taking in transit on iPhone. And the detailed reflective jrnling will happen on the Linux workstation.
+
+#SPENDINGS
+Also the expense app is really good. I was able to be mindful of all my expenses in May. I entered all my expenses in May in the app. Manual adding was something that i was shunning away that I am forced in the iOS platform. But then, good that I read that other day the writer was saying that exact disability in iOS was a boon for him, to be able to more mindful about his own spending. This forces us to review our spending. I reviewed it today by downloading my account statements for the month of May.
+From June onwards, I will  be more mindful of my SMSs, and add the expenses in the app.
+
+#JRNL
+One another key accomplishment of the day was straightening the jrnl framework. That has helped me a lot
+
+2018-05-27 16:54 another key accomplishment of the day was that I switch to the vcode fwk, where I am able to collapase the data belonging to one section.
+That has enabled me to do some editing and clean up of my jrnl, and also I have been able to write better
+
+2018-05-27 23:31 #Connecting_People_Vs_Silo
+I was studying the Connector style leadership, where all it was to about to create network of experts, and achieve great results that matter in the ever changing world. It was interesting to talk to Didibhai in this backdrop. She was saying something absolutely opposite. She was asking about alienating Milan da and Boudi. That was very interesting to see the same issue of dividing people and the inability to connect to people that makes mankind achieve less that what is possible. The pattern that Didibhai carries is the same that I used to have in childhood days, where I was always alienated from others. That non social trait shows in me time and again.
+I think another concept in play is that "Like attracts like". Since Milanda and Boudi are different from her, she wants to alienate her. It is exactly  the same way I try to alienate unknowingly many people including mummy and paku everytime. However, one important thing to keep in mind is that this concept of "Like attracts like", is more about personal preferences. But when it comes to driving an institution, family, community or a company, it is all about being able to connect to people unlike you.
+That is exactly what #Connector_Style_leadership shows up. It is about candor, self awareness, asking the right question, and connecting to the right people, to drive what is required at a given point of time. Life is good only when shared, collaborated and connected with people who are unlike us. That is the most important value of life.
+
+2018-05-29 20:42 Today was spent 4 hrs in rehashing Asana.
+I have created sections under finance to track all the work. Also created a project for Car and entered the task for car maintenance. Also in the finance project i added the details of FD, Home loan details, Rd. Today started the FD for 10k every month in Axis Bank. Today is dedicated to FInance for me. Also I installed the Spendee app and ported all spendings from that dumb expense app to this. Lots of financial work done today. I also ordered for the table clock for Paku. Overall great day.
+
+2018-05-29 23:15 accomplishments for the day -
+1. rehashed asana
+2. got the new company tag
+3. got the process initiated for hts hub photo change
+4. started the RD with Axis Bank
+5. Bought the iron box
+6. Shifted all the expenses to Spendee
+7. Configured IIMB, Outlook.com inboxes into my iPhone.
+8. Gave teh Geeta to DD. Had written my insights on identity to it.
+9. Was able to recall the home loan MCLR rebase details. The new way to update Asana is perfect.
+10. Decided to have the daily accomplishment in jrnl itself without asana. Let the Asana be the way it is. I need to regularly follow up Asana, atleast the due tasks.
+11. Today is purnima. Did terrace walk. Was insightful to see that today was Vrishchik night. I am feeling so light and good today from morning. Might be someting to do with the planetary positions. Dont know.
+12. Connected Renu with Sripathi
+
+Doing so many things, I am already tired. I could have studies edx 6.002X. Infact I started with that already, but then i did not want to strain myself and have enough sleep as i was not well just yesterday.
+
+2018-06-01 00:38 From core of my heart, I am hating myself after talking to Didibhai.
+I could see my own reflection in her. I keep blabbering non stop, without thinking anything about the other person. I always think that I know more. And that attitude in me devasates all relationships. I had always been like a teacher, and it is so suffocating for the other to be in a space where he is always being taught, and pointed to that he does not know much.
+I am so very much like Didibhai.
+I have been catching myself of being able to relate to people and allow them to talk more about themselves. I had gradually learnt that art of finding that common platform, and trying to allow the other person talk. At the end of the day, I know that people see the world based on their own models and identities. The ideas and concepts pertaining to my identity will never be identified by the other. Same is the case with me. I will never listen to the ideas and theories of the other. Like for example when Renu was alluding to the fact about buying Boleno, I was unable to take that conversation out to the furitioning. I instead broke the entire thread by asking her why she bought the SUV. Instead, I should have asked more specific questions about Boleno. Conversations are art, and without the sense of art, it is impossible to enter into the conversation with anyone. That is the key.
+So, we should talk less, and listen more. The idea for any conversation is about trying to peek into the world of the other. That is the key. And in the process of the conversation, you get a glimpse of several treasures about your own selves - your errors and faults. It is the other that shows us our own selves.
+
+2018-06-06 21:16 Today the first class of the PE-PM.
+This will help me to do my job better. I will utilize this to do my PMP. After PMP I will get more into finance. I will not be changing my profession from management to technical. Technical is my hobby. Psychology is my hobby. They are more like cake and biscuits and chocolates. The mere bread and butter is project management, on which I will have to be too good. PE/PM academy and PMP is the only way to achieve that. In future I will take up finance and then CEO
+
+2018-06-24 15:21 I cleaned up the redundant file that was created in my destination folder.
+Good it is.
+Also I started weekly report in day one. Good that i was able to automate the template. Also I will be maintaining a score card in google drive for all the verticals. So details are in text, and to do the data analytics i will be putting numbers in the google drive.
+
+2018-07-17 17:26 I am writing this after coming to July, as I had forgotten to get this wrapped up in June. Overall the month was good. This month saw me starting with the PE/PM crash course. I spent several weekends preparing for the presentation skills, decision making and doing the LMS courses.
+This was one epoch, where I thought it was my calling to do PMP. But only in July, i would realize that it is not my calling, and that I will revert to the call of being a computer scientist and an org behaviorist.
+
+---------------------------
+NOTE: HIGHLIGHTS
+---------------------------
+1. PE PM academy started. I spent several hours and several weekends studying about management and the APs and AGs. They were interesting. I also spent seveal hours resuming my Theory of Decision making as I had to give presentation on the same in the PE PM crash course. I thought that this was a new epoch of my life to get into PE PM job. I also downloaded PMP books, and started seriously delving into project managment. I started thinking that my identity is project management.

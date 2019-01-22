@@ -1,0 +1,14 @@
+# EPOCH - 9. COGNITIVE COMP SCIENTIST
+# LIFE OVERVIEW SECTION 6
+===========================================================
+
+[05/27/2018 - SUNDAY]
+    Today i spent about 3 hours to cleans my dropbox jrnl. All is cleaned up now. I created the epochs and arraned the details in the chronology jrnl. Also renamed the chronology jrnl to LIFE-OVERVIEW. Also removed earlier redundant files to LIFE-MONTHLY-REPORT folder. Now, i have a coherent overview of life in the LIFE-OVERVIEW file, and the details separated. This will make the overview file small and easy to refer.
+    Also I was figured out a smart way to index my overview file. I switched from Atom editor to Visual Studio Code Editor. In this i can collapse paragraphs. That is a very useful feature to index and give an overview of my jrnls. Great going.
+
+    Also I am now started using Day One jrnl in the iPhone to document on the fly ideas and thoughts. The details and arranged writings will only go to jrnl. I can refer to the DayOne to write the jrnl. Jrnl has to be written only in the Linux workstation to avoid file corruption.
+
+    ---------------------------
+    NOTE: HIGHLIGHTS
+    ---------------------------
+    1. JRNL consolidation. Tried out IFFT, evernote-Dayone integration etc. Started using Dayone regularly.  

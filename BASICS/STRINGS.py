@@ -49,6 +49,7 @@ whiteSpacedString = 'aaaaaGeema and Daddy \n Studies\n \naaaaaaa     '
 print(whiteSpacedString)
 print(whiteSpacedString.rstrip()) #just strips the new line character 'return' and white spaces from right
 print (whiteSpacedString.strip('a'))
+print ("Cust_id".lstrip('Cust_'))
 
 #Format methods for Strings
 # 'format characters' % (list of actual string data enclosed in quotes)

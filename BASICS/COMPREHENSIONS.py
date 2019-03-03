@@ -19,8 +19,19 @@ print(single_word_list)
 squared_dict = {n:n*n for n in range (25)}
 print(squared_dict)
 
+#NOTE - Handling categorical variables using dict comprehension
+varlist =  ['is_gas', 'is_turbo', 'is_2_doors', 'is_front_eng']
+# Applying the function to the housing list
+carPrice[varlist[0]] = carPrice[varlist[0]].apply(lambda x: 1.0 if (x=='gas') else 0.0)
+carPrice[varlist[1]] = carPrice[varlist[1]].apply(lambda x: 1.0 if (x=='turbo') else 0.0)
+carPrice[varlist[2]] = carPrice[varlist[2]].apply(lambda x: 1.0 if (x=='two') else 0.0)
+carPrice[varlist[3]] = carPrice[varlist[3]].apply(lambda x: 1.0 if (x=='front') else 0.0)
+carPrice.info()
+#Here is the list comprehension 
+carPrice = carPrice.astype({var:"float" for var in varlist})
+
 #NOTE - DECISION IN COMPREHENSION
 l = [22, 13, 45, 50, 98, 69, 43, 44, 1]
 [x+1 if x >= 45 else x+5 for x in l ]
-#NOTE another way - 
+#NOTE another way -
 num_list = [value for value in y if value]

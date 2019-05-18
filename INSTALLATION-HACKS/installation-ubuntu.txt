@@ -1,0 +1,2 @@
+1. Installation of imbalance learn - imblearn module - directly from github repo 
+pip install -U git+https://github.com/scikit-learn-contrib/imbalanced-learn.git

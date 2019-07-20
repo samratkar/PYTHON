@@ -6,6 +6,7 @@ $             Matches the end of the line
 \s            Matches 1 whitespace
 \S            Matches any 1 non-whitespace character
 *             Repeats a character zero or more times
+?             Repeats a character Zero or once.
 *?            Repeats a character zero or more times
               (non-greedy)
 +             Repeats a character one or more times

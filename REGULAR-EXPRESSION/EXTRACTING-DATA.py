@@ -1,6 +1,6 @@
 import re
 #extract all the numbers from this string
-x = 'My 2 favorite numbers are 19 and 41 when i was 14yrs in 2018 during my 1st year at school'
+x = 'My 2    favorite numbers are 19 and 41 when i was 14yrs in 2018 during my 1st year at school'
 #Here I am repeating (+ and * repeats) the character [0-9]. So, now any repeatation of only numbers 0-9 to any numbre of times will be correctly listed.
 find_list = re.findall('[0-9]+',x)
 print (find_list)

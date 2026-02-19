@@ -147,7 +147,8 @@ class AircraftEnv(gym.Env):
     def step(self, action):
         # Convert normalized action [-1, 1] back to Mach [0.70, 0.86]
         action = np.clip(action, -1.0, 1.0)
-        self.mach = 0.78 + (action[0] * 0.08)
+        action_scalar = float(np.asarray(action).reshape(-1)[0])
+        self.mach = 0.78 + (action_scalar * 0.08)
         self.mach = float(np.clip(self.mach, self.mach_min, self.mach_max))
 
         fuel_flow_kg_hr = self._fuel_flow_model(self.altitude, self.weight, self.mach, self.temp_dev)

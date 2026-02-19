@@ -1,3 +1,10 @@
+id: my-first-codelab
+summary: Build a sample app with X
+categories: web, beginner
+tags: web
+status: draft
+authors: Samrat Kar
+
 # Aircraft Mach Optimization using Deep Reinforcement Learning
 
 This application demonstrates how to use Deep Reinforcement Learning (DRL) to optimize the Mach number for aircraft tails to minimize fuel consumption.

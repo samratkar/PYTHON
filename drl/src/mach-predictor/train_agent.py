@@ -43,7 +43,7 @@ class ActorCritic(nn.Module):
     def forward(self):
         raise NotImplementedError
 
-    def get_action_and_value(self, state, action=None):
+    def get_action_and_value(self, state, action=None, deterministic=False):
         if isinstance(state, np.ndarray):
             state = torch.FloatTensor(state)
         
@@ -56,7 +56,7 @@ class ActorCritic(nn.Module):
         dist = Normal(mean, std)
         
         if action is None:
-            action = dist.sample()
+            action = mean if deterministic else dist.sample()
         
         action_log_probs = dist.log_prob(action).sum(axis=-1)
         dist_entropy = dist.entropy().sum(axis=-1)

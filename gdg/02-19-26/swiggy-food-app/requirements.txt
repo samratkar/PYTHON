@@ -1,0 +1,9 @@
+# Swiggy Food Delivery App Requirements
+# Python 3.8+
+
+# No external dependencies required for the basic CLI version
+# The app uses only Python standard library
+
+# Optional: For enhanced features
+# requests>=2.31.0  # For API calls if extending the app
+# python-dotenv>=1.0.0  # For environment variable management

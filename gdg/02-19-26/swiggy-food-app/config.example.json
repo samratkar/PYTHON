@@ -1,0 +1,29 @@
+{
+  "app_name": "Swiggy Food Delivery App",
+  "version": "1.0.0",
+  "settings": {
+    "default_address_id": null,
+    "auto_apply_coupons": false,
+    "confirm_before_order": true,
+    "max_cart_value": 1000,
+    "order_history_count": 10
+  },
+  "preferences": {
+    "dietary": {
+      "veg_only": false,
+      "cuisines": []
+    },
+    "filters": {
+      "min_rating": 0,
+      "max_delivery_time": 60
+    }
+  },
+  "notifications": {
+    "order_status_updates": true,
+    "offers_and_coupons": true
+  },
+  "favorites": {
+    "restaurants": [],
+    "dishes": []
+  }
+}
